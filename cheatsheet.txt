@@ -1,0 +1,13 @@
+Step to upload projects on GitHub:
+
+touch .gitingnore
+git config --global user.name Hussain
+git config --global user.email mohammadhussainmadani588@gmail.com
+git init
+git add .
+git commit -m "Initail Commit"
+//git status #Just to see
+ssh-keygen -t rsa -b 4096 -C "mohammadhussainmadani588@gmail.com"
+tail <path to id_rsa.pub> #add this key to your github account
+git remote add orign <ssh url.git>
+git push orign master
